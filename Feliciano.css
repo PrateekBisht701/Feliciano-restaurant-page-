@@ -1,0 +1,905 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box !important; 
+}
+html{
+    font-size: 15px;
+}
+header{
+    position:absolute;
+    width:100%;
+    z-index:555;
+}
+.top{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.916);
+    padding-top: 5px;
+    background-color: #07070753;
+}
+
+.nav-wrap{
+    background-color: #07070774;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+.nav-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width:992px){
+    .nav-flex{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+.nav-flex ul li{
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+    color: #fff;
+    padding-top: 10px;
+}
+.nav-flex li button{
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: #c8a97e;
+    color: #fff;
+    font-size: 1rem;
+    padding:12px 20px;
+    margin-top: -10px;
+    border-radius: 2px;
+
+}
+.nav-flex li button:hover{
+    background-color: #fff;
+    color: #c8a97e;
+    border: 1px solid #c8a97e;
+}
+
+
+                             /*Main Carousel*/
+
+.main-carousel{
+    width: 100%;
+    height: 500px;
+    position:unset;
+    height:auto;
+}
+.main-carousel img{
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-gradient{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.carousel-gradient::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -0rem;
+    background-color: #141313b2;
+    z-index: 9;
+    left: 0px;
+}
+
+.main-carousel h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 5.5rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 999;
+}
+.main-carousel h2{
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 999;
+}
+.main-carousel .banner-headings{
+    position:relative;
+    top: -13rem;
+}
+
+                            /*Dishes*/
+.dish{
+    position:absolute;
+    top:72%;
+    z-index:994;
+    left:0px;
+    right:0px;
+    margin-top: 2rem;
+}
+
+@media(max-width: 992px) {
+    .dish {
+      position:unset;
+    }
+  }
+  
+.dish-card{
+    width: 100%;
+}
+
+.dish-card img{
+    width: 25%;
+    border-radius: 50%;
+}
+.dish-card h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.dish-card p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media only screen and (max-width:992px){
+    .top{
+        display: none;
+    }
+
+    .main-carousel h1{
+        font-size: 5.5rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 10;
+        top: -1rem;
+    }
+    .main-carousel h2{
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: 600;
+        letter-spacing:0px;
+        position: relative;
+        top: -1rem;
+    }
+    
+    .main-carousel .banner-headings{
+        position:relative;
+        top: -12rem;
+    }
+    
+    .dish-card{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .dish-card p{
+        margin: 1rem 0rem 3rem 0rem;
+        color: #666666;
+    }
+    .dish-card h3{
+        margin: 1rem 0rem;
+        color: #666666;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .main-carousel h1{
+        font-size: 4.5rem;
+        top: -1.3rem;
+    }
+    .main-carousel h2{
+        font-size: 3.5rem;
+        top: -1.3rem;
+    }
+}
+@media only screen and (max-width:400px){
+    
+    .main-carousel h1{
+        font-size: 4rem;
+    }
+    .main-carousel h2{
+        font-size: 3rem;
+    }
+}
+                             /*About section*/
+
+.about{
+    margin: 7rem auto;
+    width: 90%;
+}
+
+.about .img1-wrap{
+    display: flex;
+    justify-content: end;
+    
+}
+.about .img1{
+    width: 350px;
+}
+.about .img1 img{
+    width: 90%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.about-heads h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 6rem;
+    position: relative;
+    top: 10px;
+    z-index: -1;
+}
+.about-heads h2{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    top: -50px;
+    margin-bottom: -1rem;
+}
+.about-heads p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #666666;
+    margin: 2rem 0rem;
+}
+.about-heads p span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666666;
+}
+
+.about-heads h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #c8a97e;
+}
+
+
+                             /*Counters*/
+
+.counter{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.numbers .count h2{
+    color: #c8a97e;
+    font-size :3rem;
+}                             
+.numbers .count p{
+    line-height: 2;
+    font-weight: 400;
+    color: #666666;
+    font-size :1rem;
+}      
+
+.counter .ptext p{
+    line-height: 2;
+    font-weight: 400;
+    color: #666666;
+    font-size :1.1rem;
+}
+
+
+                             /*SERVICES*/
+                             
+#services{
+    background: #fafafa;
+    position: relative;
+    z-index: -2;
+    padding: 3rem 0rem;
+}
+
+.service h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+}
+
+.service h2{
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.service-box{
+    margin: 1.5rem 0rem;
+}
+
+.service-box i{
+    color: #c8a97e;
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
+}
+.service-box h3{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.service-box p{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2;
+    font-weight: 400;
+    color: #666666
+
+}
+
+                            /*SPECIALTIES*/
+
+
+
+.specialty h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+}
+.specialty h2{
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.menu-pad{
+    padding: 0px;
+}
+.menu{
+    display: flex;
+}
+
+.left img{
+    width: 100%;
+    background-size: cover;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.menu-border{
+    box-sizing: border-box;
+    border: 0.5px solid #e6e6e6;
+
+}
+
+.right .flex h3{
+    text-align: left;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 1.5rem 0rem 0.8rem 0rem;
+    font-weight: 500;
+}
+
+.flex p{
+    margin-top: 2rem;
+    margin-right:2rem ;
+    font-size: 1.5rem;
+    color: #c8a97e;
+    font-weight: 600;
+}
+
+.right{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.menu button{
+    border: none;
+    background-color: #c8a97e;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 2px;
+    position: relative;
+    top: -0.5rem;
+}
+.menu button:hover{
+    background-color: #fff;
+    color: #c8a97e;
+    border: 1px solid #c8a97e;
+}
+
+#specialties{
+    margin-bottom: 4rem;
+}
+@media only screen and (max-width:1200px){
+
+    html{
+        font-size: 12px;
+    }
+    .right .flex h3{
+        line-height: 1.3;
+    }   
+}
+
+@media only screen and (max-width:767px) and (min-width:475px){
+
+    .right .flex h3{
+        font-size: 2.5rem;
+        line-height: 1.5;
+        margin: 2rem 0rem 0.8rem 0rem;
+    }
+
+    .right{
+        font-size: 1.3rem;
+    }
+
+    .menu button{
+        position: relative;
+        top: -0.5rem;
+    }
+
+}
+
+
+                            /*Chefs*/
+.chef{
+    text-align: center;
+}
+
+.chef h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+}
+.chef h2{
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+                            /*Cards*/  
+
+.cards{
+    margin: 3rem 0rem;
+}   
+                       
+.cards h3{
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    color: black;
+    font-weight: 600;
+}
+
+.cards p{   
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #666666;
+}
+
+.cards p span{
+    color: #c8a97e;
+    font-size: 1.1;
+    margin-right: 0.7rem;
+    font-weight: 500;
+}
+
+.card-border{
+    border: none;
+    margin: 2rem 2rem;
+    width: 17rem;
+    
+}
+
+@media only screen and (max-width:460px){
+
+    .card-border{
+        width: 12rem;
+        margin: 1rem 1rem;
+    }
+    
+}
+
+
+                            /*Reservations*/
+
+#reservation{
+    color: black;
+    background-image: url("images/bg/bg_3.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    z-index: 2;
+} 
+
+.box-bg{
+    background-color: #fff;
+    position: absolute;
+    top: 7rem;
+    z-index: -2;
+}
+
+.booking h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    bottom: 40px;
+    padding-left:3rem ;
+    z-index: -1;
+}
+.booking h2{
+    position: relative;
+    bottom: 100px;
+    padding-left:3rem;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+}                            
+.booking form{
+    margin-top: -6rem;
+}
+.booking label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.booking input{
+    width: 80%;
+    padding: 0.5rem 0rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    border: 0.8px solid #c9bebe;
+}
+
+.people{
+    margin-top: 2rem;
+}
+
+.booking button{
+    box-sizing: border-box;
+    border: none;
+    background-color: #c8a97e;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 2rem 0rem;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    position: relative;
+    top: -0.5rem;
+}
+button:hover{
+    background-color: #fff;
+    color: #c8a97e;
+    border: 1px solid #c8a97e;
+}
+
+@media only screen and (max-width:1248px){
+    html{
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width:1100px){
+    html{
+        font-size: 12px;
+    }
+
+    .booking h1{
+        font-size: 6rem;
+        position: relative;
+        bottom: 40px;
+        padding:1rem;
+    }
+    .booking h2{
+        position: relative;
+        bottom: 100px;
+        color: black;
+        font-size: 3rem;
+        padding:1rem;
+    }  
+    
+}
+@media only screen and (max-width:846px){
+
+    html{
+        font-size: 12px;
+    }
+    .booking h1{
+        font-size: 5rem;
+        padding:0rem;
+        position: relative;
+        bottom: 32px;
+    }
+    .booking h2{
+        font-size: 2.8rem;
+        padding:0rem;
+        position: relative;
+        bottom: 70px; 
+    }  
+    .booking label{
+        margin-left: 0rem;
+    }
+    .booking input{
+        margin-left: 0rem;
+        width: 90%;
+    }
+    .booking form{
+        margin-top: -5rem;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+
+    .booking h1{
+        font-size:4.5rem ;
+        margin-left: 1rem;
+        position: relative;
+        bottom: 20px;
+    }
+    .booking h2{
+        font-size:2.5rem ;
+        margin-left: 1rem;
+        position: relative;
+        bottom: 55px;
+    }
+    .booking input{
+        margin-left: 0rem;
+    }
+
+    .booking button{
+        margin: 1rem 0rem;
+        align-items: flex-start;
+    }
+
+    .booking form{
+        margin-top: -3rem;
+    }
+
+    .people{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #reservation{
+        background-image: none;
+    } 
+    .box-bg{
+        margin-bottom: 5rem;
+    }
+}
+
+                             /*Customer Testimonial*/
+
+.customer h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    top: 50px;
+    z-index: 0;
+}
+
+.customer h2{
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+    position: relative;
+    top: -1rem;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+/*Customer-Carousel*/
+
+
+.containerz-wrapper{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerz{
+    margin-inline: 2rem;
+    
+}
+.img-wrapper{
+    margin:0 auto;
+    width: 45%;
+}
+.reviews{
+    text-align: center;
+}
+
+.containerz .img-wrapper img{
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.reviews p{
+    margin: 2rem auto;
+    color: #666666;
+    width: 80%;
+}
+
+.reviews h3{
+    color: black;
+    font-weight: 300;
+}
+
+
+                             /*Blog*/
+
+.blog-bg{ 
+    background-color: #fafafa;
+    z-index: -1;
+}                           
+.blogs h1{
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+    position: relative;
+    top: 60px;
+    z-index: 0;
+}
+
+.blogs h2{
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+.card0{
+    border: none;
+    padding-bottom: 1.5rem;
+}
+.post{
+    padding:1rem 3rem 6rem 3rem ;
+}
+.post img{
+    height: 300px;
+    object-fit: cover;
+}
+.post h3{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.post h6{
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:1rem 0rem ;
+
+}
+
+.post a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+           
+
+                             /*Footer starts*/
+
+footer{
+    background: #141313;
+    color: #fff;
+    padding: 5rem 0rem;
+    
+}         
+
+.content h2{
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.content p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.content h2 span{
+    padding: 0.7rem;
+    margin-right: 10px;
+    background-color: #e6e6e60f;
+    border-radius: 50%;
+
+}
+.content ul{
+    width: 80%;
+}
+.content ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    left: -2rem;
+}
+
+.content .insta img{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 6.2rem;
+}
+
+footer form #email{
+    width: 80%;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+footer form #email::placeholder{
+    text-align: center;
+}
+
+footer form button{
+    width: 80%;
+    height: 3rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #c8a97e;
+    border: none;
+}
+
+.sub-form{
+    margin: 0 auto;
+}
+.f-box{
+    margin-bottom: 3rem;
+}
+
+.rights p{
+    margin: 2rem 0rem;  
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+@media only screen and (max-width:768px){
+
+    .content .insta img{
+        height: 8rem;
+    }
+    
+    footer form #email{
+        width: 100%;
+        height: 4rem;
+    }
+    
+    footer form button{
+        width: 100%;
+        height: 4rem;
+    }
+
+}
